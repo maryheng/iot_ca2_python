@@ -43,7 +43,7 @@ def soundThresholdCallback(client, userdata, message):
 
 
 # AWS Credentials
-host = "a2lqw7hkum5oos.iot.ap-southeast-1.amazonaws.com"
+host = "(insert your own aws endpoint)"
 rootCAPath = "rootca.pem"
 certificatePath = "certificate.pem.crt"
 privateKeyPath = "private.pem.key"
