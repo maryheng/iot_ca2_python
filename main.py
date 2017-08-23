@@ -85,7 +85,7 @@ def startMain():
 	soundInput = format(float(adc.value * 1024), '.2f')
 
 	# Round value to closest integer
-  val = int(round(float(soundInput)))
+  	val = int(round(float(soundInput)))
 	newSoundThreshold = int(round(float(soundThreshold)))
 	print("Sound from surroundings: " + str(val))
 	sleep(1)
@@ -111,7 +111,7 @@ def startMain():
 		bz.on()
 	
 		# Publish all data to MQTT (sensor/alert) (sound, location, image) 
-	  publishToSensorAlertMqtt(photoUrl, location, val)
+	  	publishToSensorAlertMqtt(photoUrl, location, val)
 
 
 		# After 10 seconds,
